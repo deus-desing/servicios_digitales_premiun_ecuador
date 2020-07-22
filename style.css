@@ -1233,6 +1233,7 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 .contacto{
   
     background: linear-gradient(180deg, #fff 50%, #380205 50%);
+    margin-top: 14rem;
    
   }
   svg.ola-contacto{
@@ -1327,9 +1328,9 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
   }
   .redes .ubicacion i{
     margin-right: 1.4rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    color: #234796;
+    color: #a80810;
   }
   .redes .correo{
     color: #000;
@@ -1337,9 +1338,9 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
   }
   .redes .correo i{
     margin-right: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    color: #234796;
+    color: #a80810;
   }
   .redes .telefono{
     color: #000;
@@ -1347,9 +1348,9 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
   }
   .redes .telefono i{
     margin-right: 1rem;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #234796;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #a80810;
   }
   
   .redes .links-redes i{
@@ -1420,4 +1421,16 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
         display: none;
         
     }
+    .contacto{
+  
+        
+        margin-top: 10rem;
+       
+      }
+}
+@media(max-width: 900px){
+    .contacto{
+        margin-top: 0rem;
+       
+      }
 }
