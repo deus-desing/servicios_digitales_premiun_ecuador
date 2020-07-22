@@ -507,7 +507,32 @@
     </div> <!-- End brands area -->
     
     
-   
+   <!-- Load Facebook SDK for JavaScript -->
+   <div id="fb-root"></div>
+   <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         xfbml            : true,
+         version          : 'v7.0'
+       });
+     };
+
+     (function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));</script>
+
+   <!-- Your Chat Plugin code -->
+   <div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="113742440410308"
+theme_color="#0084ff"
+logged_in_greeting="Hola, ¿Cómo podemos ayudarte?"
+logged_out_greeting="Hola, ¿Cómo podemos ayudarte?">
+   </div>
    
     <!--section de contacto-->
     <section class="contacto" id="contacto">
@@ -570,16 +595,18 @@
     </section>
     
     
-    <div class="btn-whatsapp">
+    <!-- <div class="btn-whatsapp">
         <a title="Click para chatear" href="https://api.whatsapp.com/send?phone=593984288113&text=Me%20gustaría%20informacion%20del%20servicio" >
         <img  src="img/icons8-whatsapp.svg" alt="" srcset="">
         </a>
-    </div>
-    <div class="btn-messenger">
+    </div> -->
+    <!-- <div class="btn-messenger">
         <a title="Click para chatear" href="https://www.messenger.com/t/113742440410308" >
         <img  src="img/icons8-facebook-messenger.svg" alt="" srcset="">
         </a>
-    </div>
+    </div> 
+      -->
+     
 
 
     <!-- Latest jQuery form server -->
@@ -600,6 +627,7 @@
     
     <!-- Slider -->
     <script type="text/javascript" src="js/bxslider.min.js"></script>
-	<script type="text/javascript" src="js/script.slider.js"></script>
+    <script type="text/javascript" src="js/script.slider.js"></script>
+    
   </body>
 </html>
