@@ -1,3 +1,8 @@
+window.onload = function(){
+    $('#onload').fadeOut();
+    $('body').removeClass('hola');
+}
+
 jQuery(document).ready(function($){
     
     // jQuery sticky Menu
