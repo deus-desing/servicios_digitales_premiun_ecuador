@@ -31,7 +31,12 @@
     
 
   </head>
-  <body>
+  <body class="hidden">
+    <div class="centrado" id="onload">
+        <!-- aqui empieza el loader -->
+        <div class="lds-ripple"><div></div><div></div></div>
+
+    </div>
    
     <div class="header-area">
         
@@ -597,6 +602,12 @@
     <script src="js/global.js"></script>
     <!-- Slider -->
     <script type="text/javascript" src="js/bxslider.min.js"></script>
-	<script type="text/javascript" src="js/script.slider.js"></script>
+    <script type="text/javascript" src="js/script.slider.js"></script>
+    <script>
+        window.onload = function(){
+    $('#onload').fadeOut();
+    $('body').removeClass('hidden');
+}
+    </script>
   </body>
 </html>
